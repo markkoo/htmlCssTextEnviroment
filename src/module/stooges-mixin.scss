@@ -76,16 +76,11 @@
 @mixin gridBuilder($grid) {
     @for $i from 1 through 12 {
         .#{$grid}col-#{$i} {
-            width: ($i/12 * 100%);
+            flex: 0 0 ($i/12 * 100%);
+            max-width: ($i/12 * 100%);
         }
     }
-    [class*="#{$grid}col"]{
-        float: left;
-        min-height: 1px;
-    }
-    .#{$grid}col-right {
-        float: right;
-    }
+    
 }
 
 @mixin ellipsis($row, $lineHeight, $fontSize) {

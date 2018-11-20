@@ -272,6 +272,10 @@ p {
     padding-left: $container-padding;
     padding-right: $container-padding;
 }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
 @media #{$breakpoint-only-xs} {
     .container {
         padding-left: $container-xs-padding;
