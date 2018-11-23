@@ -1,0 +1,97 @@
+::-moz-selection {
+  background: #89331B;
+  color: white;
+}
+
+::selection {
+  background: #89331B;
+  color: white;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.flaticon-menu:before {
+  content: "\f100";
+}
+
+.flaticon-right-arrow:before {
+  content: "\f101";
+}
+
+.flaticon-up-arrow:before {
+  content: "\f102";
+}
+
+.flaticon-down-arrow:before {
+  content: "\f103";
+}
+
+.flaticon-cancel:before {
+  content: "\f104";
+}
+
+.buttonIcon, .buttonPrimaryOutlineLg, .buttonSecondaryOutlineLg, .buttonPrimaryLg {
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  height: 45px;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.buttonIcon {
+  color: white;
+  font-weight: normal;
+  font-family: inherit;
+  height: inherit;
+}
+
+.buttonIcon i {
+  font-size: 24px;
+}
+
+.buttonPrimaryOutlineLg {
+  border: 2px solid #89331B;
+  color: #89331B;
+  width: 100%;
+}
+
+.buttonPrimaryOutlineLg:hover {
+  border-color: #D5D7DB;
+  color: #D5D7DB;
+}
+
+.buttonSecondaryOutlineLg {
+  border: 2px solid white;
+  color: white;
+  width: 100%;
+}
+
+.buttonSecondaryOutlineLg:hover {
+  background: #89331B;
+  border-color: #89331B;
+  color: #a5a7ac;
+}
+
+.buttonPrimaryLg {
+  background: #89331B;
+  color: white;
+  width: 100%;
+}
+
+.buttonPrimaryLg:hover {
+  background: white;
+  color: #89331B;
+  border: 2px solid #89331B;
+}
+/*# sourceMappingURL=project-basscss.css.map */
