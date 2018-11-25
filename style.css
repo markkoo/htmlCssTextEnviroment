@@ -1223,107 +1223,68 @@ router-outlet {
   background-position: center;
 }
 
-.oswald p {
-  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif !important;
-}
-
-.oswald a {
-  color: #54565B;
-}
-
-.oswald a:hover {
-  color: #89331B;
-}
-
 .mainTitle {
   padding: 200px 0 150px;
 }
 
-.mainTitle h1 {
+.mainTitle .h1 {
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
   font-size: 68px;
   color: white;
 }
 
-.mainTitle p {
-  font-size: 20px;
+.mainTitle .h3 {
+  font-size: 28px;
   font-family: "Merriweather", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
   color: white;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 .card {
   background: white;
   border-radius: 10px;
-  padding: 60px 0px;
+  padding: 60px 10px;
+  width: 100%;
 }
 
-.centerText {
-  width: 80%;
+.card .card-desc {
+  padding: 0 20px;
   margin: 0 auto;
+  max-width: 900px;
+  margin-bottom: 30px;
 }
 
-.centerText p {
+.card .card-desc p {
+  color: #787b82;
   font-family: "Merriweather", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  letter-spacing: normal;
+  font-weight: 400;
+  margin: 0 0 24px;
+  line-height: 1.8;
 }
 
-.centerText p b {
+.card .card-desc b {
   color: #89331B;
 }
 
-.centerText h3 {
+.card .card-desc .h3 {
   color: #89331B;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
 }
 
-.centerText ul li {
-  padding: 5px;
+.inlineImage {
+  margin-top: 60px;
+  width: 100%;
+}
+
+.inlineImage .p1 {
+  padding: 8px;
 }
 
 .inlineImage img {
   width: 100%;
-  padding: 6px;
-  border-radius: 10px;
-}
-
-.otherImage {
-  margin-top: 200px;
-  text-align: center;
-}
-
-.otherImage .imageTextWrap {
-  position: relative;
-  display: block;
-  overflow: hidden;
-}
-
-.otherImage .imageTextWrap:hover img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.otherImage .imageTextWrap:hover p {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.otherImage .imageTextWrap img {
-  width: 100%;
-  display: block;
-  -webkit-transition: 1s;
-  transition: 1s;
-  border-radius: 10px;
-  padding: 6px;
-}
-
-.otherImage .imageTextWrap p {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.6);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  color: white;
-  font-size: 28px;
-  font-family: "Merriweather", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  border-radius: 5px;
 }
 
 .flex-wrap {
@@ -1337,12 +1298,58 @@ router-outlet {
   display: flex;
 }
 
+.otherImage {
+  margin-top: 100px;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.otherImage .h1 {
+  color: #54565B;
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-family: #787b82;
+}
+
+.otherImage .other4Image .image-scale {
+  position: relative;
+  width: 100%;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.otherImage .other4Image .image-scale img {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.otherImage .other4Image .image-scale img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.otherImage .other4Image .image-scale p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 5px 10px;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  text-transform: capitalize;
+}
+
 .theArea {
   position: relative;
+  display: block;
 }
 
-.theArea .myImageService {
-  background-image: url(./images/slide2.jpg);
+.theArea .images {
   position: absolute;
   left: 0;
   top: 0;
@@ -1351,227 +1358,63 @@ router-outlet {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 10px;
+  background-image: url(./images/slide1.jpg);
 }
 
-.theArea .myImageNutrition {
-  background-image: url(./images/nutrition1.jpg);
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-}
-
-.theArea .myImageQuality {
-  background-image: url(./images/quality1.jpg);
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-}
-
-.theArea .myImageContact {
-  background-image: url(./images/contact1.jpg);
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-}
-
-.serviceCard {
+.applicationCard {
   background: white;
   border-radius: 10px;
-}
-
-.serviceCard .centerText {
-  margin: 100px auto;
-}
-
-.center {
-  padding: 50px 0;
-  margin: 0 auto;
-}
-
-.contantShow {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.contantShow h4 {
-  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-}
-
-.contantShow p {
-  font-family: "Merriweather", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-}
-
-.enquiryText {
-  padding: 150px 20px 0px;
-}
-
-.enquiryText h3 {
-  color: white;
-}
-
-.enquiryText input {
-  padding: 12px;
-  margin: 5px;
-}
-
-.enquiryText button {
-  padding: 12px;
-  margin: 5px;
   width: 100%;
 }
 
-.logo {
-  float: left;
+.applicationCard .card-desc {
+  padding: 0 20px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #fcfcfd;
+.applicationCard .card-desc p {
+  color: #787b82;
+  font-family: "Merriweather", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  letter-spacing: normal;
+  font-weight: 400;
+  margin: 0 0 24px;
+  line-height: 1.5;
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #54565B;
-  text-align: center;
-  padding: 14px 12px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
+.applicationCard .card-desc b {
   color: #89331B;
 }
 
-.topnav .icon {
-  display: none;
+.applicationCard .card-desc .h3 {
+  color: #89331B;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
 }
 
-.dropdown:hover .dropdown-content {
+.applicationCard .cover-desc {
+  padding: 100px 100px 90px;
   display: block;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  margin-top: 20px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 500;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.sidebar {
-  display: none;
-}
-
-.right {
-  float: right;
-  width: 50%;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a {
-    display: none;
+@media (max-width: 1024px) {
+  .mainTitle {
+    width: 100%;
   }
-  .topnav a.icon {
-    float: right;
+  .mainTitle .h1 {
+    font-size: 28px;
+  }
+  .mainTitle .h3 {
+    font-size: 18px;
+  }
+  .cover-desc {
+    padding: 100px 20px 90px !important;
     display: block;
   }
-}
-
-@media screen and (max-width: 600px) {
-  .sidebar {
-    display: block;
-    width: 40%;
-    height: 100%;
-    overflow: hidden;
-    background-color: #fcfcfd;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    left: -250px;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    opacity: 0;
+  .cover-desc p {
+    font-size: 14px;
   }
-  .sidebar a {
-    display: block;
-    color: #54565B;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  .cover-desc .h3 {
+    font-size: 28px;
   }
-  .sidebar a:hover {
-    color: #89331B;
-  }
-  .topnav {
-    text-align: center;
-  }
-  .right {
-    float: left;
-    width: 5%;
-  }
-  .logo {
-    float: unset;
-  }
-}
-
-footer {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-}
-
-footer img {
-  width: 50%;
-}
-
-footer p, footer a {
-  color: #787b82;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-}
-
-footer b {
-  color: #fcfcfd;
-}
-
-.mycontainer {
-  width: 80%;
-  margin: 50px auto;
-}
-
-.white {
-  color: #fcfcfd;
-  border-bottom: solid;
-  border-width: 10px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,7 +9,6 @@
         background-repeat: repeat;
         background-size: cover;
         background-position: center;
-        
 }
 
 @mixin card{
@@ -73,18 +72,6 @@
     }
     
     
-.oswald{
-    p{
-        font-family:$font-family-2 !important;
-    }
-    a{
-        color: $font-color-1;
-        &:hover{
-            color:$color-main;
-        }
-    }
-
-}
 .mainTitle{
     padding: 200px 0 150px;
     .h1{
@@ -96,63 +83,177 @@
         font-size: 28px;
         font-family: $font-family-1;
         color:white;
+        line-height: 1.5;
+        font-weight: 400;
     }
 }
+
 
 .card{
     @include card;
-    padding: 60px 0px; 
+    padding: 60px 10px; 
+    width: 100%;
+    .card-desc{
+       padding: 0 20px;
+       margin:0 auto;
+       max-width: 900px;
+       margin-bottom: 30px;
+       
+        p{
+            color: $font-color-2;
+            font-family: $font-family-1;
+            letter-spacing: normal;
+            font-weight: 400;
+             margin: 0 0 24px;
+             line-height: 1.8;
+        }
+        b{
+            color: $color-main;
+        }
+        .h3{
+            color: $color-main;
+            font-family: $font-family-2;
+        }
+    }
 }
 
-.centerText{
-    width: 80%;
-    margin:0 auto;
-    p{
-        font-family: $font-family-1;
-        b{
-            color:$color-main;
-        }
-    }   
-    h3{
-        color:$color-main;
-    }
-    ul{
-        li{
-            padding: 5px;
-        }
-    }
-}
 
 .inlineImage{
+    margin-top: 60px;
+    width: 100%;
+    .p1{
+        padding: 8px;
+    }
     img{
         width: 100%;
-        border-radius: 10px;
+        border-radius: 5px;
     }
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex {
+    display: flex;
 }
 
 .otherImage{
-    margin-top: 200px;
+    margin-top: 100px;
     text-align: center;
+    padding: 60px 0;
+    .h1{
+        color: $font-color-1;
+        font-size: 48px;
+        margin-bottom: 20px;
+        font-family: $font-color-2;
+    }
+    .other4Image{
         
-        img{
-            width:100%;
-            display: block;
-            transition: 1s;
-            border-radius: 10px;
-            padding: 6px;
-        }
-        p{
-            position: absolute;
-            bottom: 0;
+        
+        .image-scale{
+            position: relative;
             width: 100%;
-            margin:0;
-            text-align: center;
-            background: rgba(black,0.6);
-            transition: 0.5s;
-            color: white;
-            font-size: 28px;
+            padding: 8px;
+            overflow: hidden;
+            
+            img{
+                width: 100%;
+                border-radius: 5px;
+                display: block;
+                transition: 1.5s;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            p{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                margin-bottom: 0;
+                width: 100%;
+                padding: 5px 10px;
+                text-align: center;
+                color: white;
+                background: rgba(0,0,0,0.6);
+                text-transform: capitalize;
+               
+            }
+        }   
+    }
+        
+}
+
+.theArea{
+    position: relative;
+    display: block;
+    .images{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./images/slide1.jpg);
+    }
+    
+}
+
+.applicationCard{
+    @include card;
+    width: 100%;
+    .card-desc{
+       padding: 0 20px;
+       margin:0 auto;
+       margin-bottom: 30px;
+       
+        p{
+            color: $font-color-2;
             font-family: $font-family-1;
+            letter-spacing: normal;
+            font-weight: 400;
+             margin: 0 0 24px;
+             line-height: 1.5;
+        }
+        b{
+            color: $color-main;
+        }
+        .h3{
+            color: $color-main;
+            font-family: $font-family-2;
         }
     }
+    .cover-desc{
+        padding: 100px 100px 90px;
+        display: block;
+    }
+    
 }
+
+@media (max-width: 1024px){
+    .mainTitle{
+        width: 100%;
+        .h1{
+            font-size: 28px;
+        }
+        .h3{
+            font-size: 18px;
+        }
+    }
+    .cover-desc{
+        padding: 100px 20px 90px !important;
+        display: block;
+        
+        p{
+            font-size: 14px;
+        }
+        .h3{
+            font-size: 28px;
+        }
+    }
+    
+}
+
+
 
