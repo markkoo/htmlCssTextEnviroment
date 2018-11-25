@@ -1195,11 +1195,46 @@ router-outlet {
   background-position: center;
 }
 
+.service .mainTitle {
+  width: 60%;
+}
+
+.service .mainTitle .h1 {
+  line-height: 1.2;
+}
+
+.service .mainTitle .h3 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.service .cover-desc {
+  padding: 100px 100px 80px;
+  display: block;
+}
+
+.service .theArea .images {
+  background-image: url(./images/slide2.jpg);
+}
+
 .nutrition {
   background-image: url(./images/nutritionBg.jpg);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
+}
+
+.nutrition .mainTitle .h1 {
+  font-size: 68px;
+}
+
+.nutrition .mainTitle .h3 {
+  font-size: 24px;
+}
+
+.nutrition .theArea .images {
+  background-image: url(./images/nutrition1.jpg);
+  border-radius: 10px;
 }
 
 .quality {
@@ -1209,11 +1244,19 @@ router-outlet {
   background-position: center;
 }
 
+.quality .theArea .images {
+  background-image: url(./images/quality1.jpg);
+}
+
 .article {
   background-image: url(./images/articleBg.jpg);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
+}
+
+.article .applicationCard .cover-desc {
+  padding: 60px 10px;
 }
 
 .contact {
@@ -1223,14 +1266,27 @@ router-outlet {
   background-position: center;
 }
 
+.about {
+  background-image: url(./images/aboutBg.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.about .mainTitle {
+  width: 65%;
+}
+
 .mainTitle {
   padding: 200px 0 150px;
+  width: 70%;
 }
 
 .mainTitle .h1 {
   font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
   font-size: 68px;
   color: white;
+  margin-bottom: 10px;
 }
 
 .mainTitle .h3 {
@@ -1241,8 +1297,20 @@ router-outlet {
   font-weight: 400;
 }
 
+.mainTitle p {
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+
 .card {
-  background: white;
+  background: rgba(255, 255, 255, 0.97);
   border-radius: 10px;
   padding: 60px 10px;
   width: 100%;
@@ -1251,7 +1319,7 @@ router-outlet {
 .card .card-desc {
   padding: 0 20px;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 880px;
   margin-bottom: 30px;
 }
 
@@ -1271,6 +1339,12 @@ router-outlet {
 .card .card-desc .h3 {
   color: #89331B;
   font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+}
+
+.card .card-desc .h2 {
+  font-size: 18px;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  color: black;
 }
 
 .inlineImage {
@@ -1359,12 +1433,14 @@ router-outlet {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(./images/slide1.jpg);
+  border-radius: 10px;
 }
 
 .applicationCard {
-  background: white;
+  background: rgba(255, 255, 255, 0.97);
   border-radius: 10px;
   width: 100%;
+  padding: 0;
 }
 
 .applicationCard .card-desc {
@@ -1374,7 +1450,7 @@ router-outlet {
 }
 
 .applicationCard .card-desc p {
-  color: #787b82;
+  color: #54565B;
   font-family: "Merriweather", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
   letter-spacing: normal;
   font-weight: 400;
@@ -1391,9 +1467,26 @@ router-outlet {
   font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
 }
 
+.applicationCard .card-desc .h2 {
+  font-size: 18px;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  color: black;
+}
+
 .applicationCard .cover-desc {
   padding: 100px 100px 90px;
   display: block;
+}
+
+.applicationCard .cover-desc ul li {
+  margin-bottom: 10px;
+}
+
+.applicationCard .cover-desc .h1 {
+  color: #787b82;
+  text-align: center;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  line-height: 1.8;
 }
 
 @media (max-width: 1024px) {
@@ -1401,7 +1494,8 @@ router-outlet {
     width: 100%;
   }
   .mainTitle .h1 {
-    font-size: 28px;
+    font-size: 38px;
+    margin-bottom: 10px;
   }
   .mainTitle .h3 {
     font-size: 18px;

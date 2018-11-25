@@ -12,7 +12,7 @@
 }
 
 @mixin card{
-        background: white;
+        background: rgba(255, 255, 255, 0.97);
         border-radius:10px;
 }
 @mixin imgBox{
@@ -53,31 +53,98 @@
     .service{
         background-image: url(./images/serviceBg.jpg);
         @include bg;
+        .mainTitle{
+            width: 60%;
+            .h1{
+                line-height: 1.2;
+            }
+            .h3{
+                font-size: 20px;
+                line-height: 1.5;
+            }
+        }
+
+        .cover-desc{
+            padding: 100px 100px 80px;
+            display: block;
+        }
+
+        .theArea{
+            .images{
+                background-image: url(./images/slide2.jpg);
+                
+            }
+            
+        }
+        
     }
     .nutrition{
         background-image: url(./images/nutritionBg.jpg);
         @include bg;
+        
+        .mainTitle{
+            .h1{
+                font-size:68px;
+            }
+            .h3{
+                font-size: 24px;
+            }
+        }
+        
+        .theArea{
+            .images{
+                background-image: url(./images/nutrition1.jpg);
+                border-radius: 10px;
+            }
+            
+        }
     }
     .quality{
         background-image: url(./images/qualityBg.jpg);
         @include bg;
+
+        
+        .theArea{
+            .images{
+                background-image: url(./images/quality1.jpg); 
+            }
+            
+        }
     }
     .article{
         background-image: url(./images/articleBg.jpg);
         @include bg;
+
+        .applicationCard{
+            .cover-desc{
+                padding: 60px 10px;
+            }
+        }
+
     }
     .contact{
         background-image: url(./images/contactBg.jpg);
         @include bg;
     }
+    .about{
+        background-image: url(./images/aboutBg.jpg);
+        @include bg;
+
+        .mainTitle{
+            width: 65%;
+            
+        }
+    }
     
     
 .mainTitle{
     padding: 200px 0 150px;
+    width: 70%;
     .h1{
         font-family: $font-family-2;
         font-size: 68px;
         color:white;
+        margin-bottom: 10px;
     }
     .h3{
         font-size: 28px;
@@ -85,7 +152,16 @@
         color:white;
         line-height: 1.5;
         font-weight: 400;
+        
     }
+    p{
+        display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    }
+    
 }
 
 
@@ -96,7 +172,7 @@
     .card-desc{
        padding: 0 20px;
        margin:0 auto;
-       max-width: 900px;
+       max-width: 880px;
        margin-bottom: 30px;
        
         p{
@@ -113,6 +189,11 @@
         .h3{
             color: $color-main;
             font-family: $font-family-2;
+        }
+        .h2{
+            font-size: 18px;
+            font-family: $font-family-2;
+            color: black;
         }
     }
 }
@@ -196,6 +277,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url(./images/slide1.jpg);
+        border-radius: 10px;
     }
     
 }
@@ -203,13 +285,14 @@
 .applicationCard{
     @include card;
     width: 100%;
+    padding: 0;
     .card-desc{
        padding: 0 20px;
        margin:0 auto;
        margin-bottom: 30px;
        
         p{
-            color: $font-color-2;
+            color: $font-color-1;
             font-family: $font-family-1;
             letter-spacing: normal;
             font-weight: 400;
@@ -223,10 +306,26 @@
             color: $color-main;
             font-family: $font-family-2;
         }
+        .h2{
+            font-size: 18px;
+            font-family: $font-family-2;
+            color: black;
+        }
     }
     .cover-desc{
         padding: 100px 100px 90px;
         display: block;
+        ul{
+            li{
+                margin-bottom: 10px ;
+            }
+        }
+        .h1{
+            color: $font-color-2;
+            text-align: center;
+            font-family: $font-family-2;
+            line-height: 1.8;
+        }
     }
     
 }
@@ -235,7 +334,8 @@
     .mainTitle{
         width: 100%;
         .h1{
-            font-size: 28px;
+            font-size: 38px;
+            margin-bottom: 10px;
         }
         .h3{
             font-size: 18px;
