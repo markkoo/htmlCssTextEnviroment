@@ -1473,9 +1473,23 @@ router-outlet {
   color: black;
 }
 
+.applicationCard .card-desc .h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #54565B;
+  line-height: 24px;
+  letter-spacing: 1;
+  margin: 0 0 14px;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+}
+
 .applicationCard .cover-desc {
   padding: 100px 100px 90px;
   display: block;
+}
+
+.applicationCard .cover-desc address {
+  font-style: normal;
 }
 
 .applicationCard .cover-desc ul li {
@@ -1487,6 +1501,57 @@ router-outlet {
   text-align: center;
   font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
   line-height: 1.8;
+}
+
+.applicationCard .cover-desc .companyName {
+  margin-bottom: 5px;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+}
+
+.applicationCard .cover-desc .companyName span {
+  font-size: 13px;
+}
+
+.applicationCard .cover-desc a {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  color: #54565B;
+  display: block;
+}
+
+.applicationCard .cover-desc a:hover {
+  color: #89331B;
+}
+
+.applicationCard .cover-desc .address {
+  line-height: 1.2;
+}
+
+.applicationCard .cover-desc .mt1 {
+  margin-top: 8px;
+}
+
+.applicationCard .word p {
+  font-weight: 400;
+  color: #54565B;
+  line-height: 1.5;
+  letter-spacing: normal;
+  margin: 0 0 24px;
+  margin-bottom: 10px;
+}
+
+.applicationCard .word p .tel {
+  font-family: #787b82;
+  color: #89331B;
+  display: inline;
+}
+
+.applicationCard .word ul {
+  padding-left: 15px;
+  color: #787b82;
+}
+
+.applicationCard .word ul li {
+  margin-bottom: 5px;
 }
 
 @media (max-width: 1024px) {
@@ -1510,5 +1575,148 @@ router-outlet {
   .cover-desc .h3 {
     font-size: 28px;
   }
+}
+
+.stepper {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 860px;
+  margin: auto;
+  position: relative;
+}
+
+.stepper .step {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  width: 82px;
+  height: 82px;
+  border: 2px solid #cfd0d3;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.stepper .active {
+  color: #89331B;
+  border-color: #89331B;
+}
+
+.show {
+  display: block;
+  -webkit-animation: anim-stepper 1s ease 0.2s 1 normal both running;
+          animation: anim-stepper 1s ease 0.2s 1 normal both running;
+}
+
+.none {
+  display: none;
+}
+
+.form {
+  background: url(./images/form.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  padding: 100px 20px 90px;
+}
+
+.form .px1 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.form .h3 {
+  font-size: 28px;
+  font-weight: 400px;
+  line-height: 28px;
+  margin: 0 0 14px;
+  color: white;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid #222222;
+  color: #000;
+  height: 45px;
+  margin-bottom: 5px;
+  outline: none;
+  padding: 0 20px;
+}
+
+.form label {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid #222222;
+  color: #54565B;
+  font-size: 13px;
+  height: 45px;
+  margin-bottom: 5px;
+  outline: none;
+  padding: 11px 20px;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.form svg {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  fill: currentColor;
+  margin-top: -0.25em;
+  margin-right: 0.25em;
+}
+
+.form .ta1 {
+  height: 90px;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+}
+
+.form .ta2 {
+  height: 140px;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+}
+
+.form .btnPri {
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  height: 45px;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: #89331B;
+  color: white;
+  width: 100%;
+}
+
+.form .btnPri:hover {
+  color: #89331B;
+  background-color: white;
+  border-color: #89331B;
+  border: 2px solid;
 }
 /*# sourceMappingURL=style.css.map */

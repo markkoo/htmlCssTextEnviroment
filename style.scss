@@ -311,10 +311,23 @@
             font-family: $font-family-2;
             color: black;
         }
+        .h4{
+            font-size: 16px;
+            font-weight: 400;
+            color: #54565B;
+            line-height: 24px;
+            letter-spacing: 1;
+            margin: 0 0 14px;
+            font-family: $font-family-2
+        }
+        
     }
     .cover-desc{
         padding: 100px 100px 90px;
         display: block;
+        address{
+            font-style: normal;
+        }
         ul{
             li{
                 margin-bottom: 10px ;
@@ -326,8 +339,56 @@
             font-family: $font-family-2;
             line-height: 1.8;
         }
+        .companyName{
+            margin-bottom: 5px;
+            font-family: $font-family-2;
+            
+            span{
+                font-size: 13px;
+            }
+        }
+        a{
+            font-family: $font-family-3;
+            color: $font-color-1;
+            display: block;
+            &:hover{
+                color: $color-main;
+            }
+        }
+        .address{
+            line-height: 1.2;
+        }
+        .mt1{
+            margin-top: 8px;
+        }
+        
     }
-    
+    .word{
+        
+        p{
+            font-weight: 400;
+            color: #54565B;
+            line-height: 1.5;
+            letter-spacing: normal;
+            margin: 0 0 24px;
+            margin-bottom: 10px;
+
+            .tel{  
+                    font-family: $font-color-2 ;
+                    color: $color-main;
+                    display: inline;
+                
+            }
+        }
+        ul{
+            padding-left: 15px;
+            color: $font-color-2;
+            li{
+                margin-bottom: 5px;
+            }
+        }
+
+    }
 }
 
 @media (max-width: 1024px){
@@ -351,8 +412,128 @@
         .h3{
             font-size: 28px;
         }
+        
     }
     
+}
+
+
+.stepper {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 860px;
+    margin: auto;
+    position: relative;
+
+    .step {
+        position: relative;
+        display: flex;
+        margin: 5px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-size: 14px;
+        width: 82px;
+        height: 82px;
+        border: 2px solid #cfd0d3;
+        border-radius: 50%;
+        background: white;
+        cursor: pointer;
+        transition: .3s ease-in;
+    }
+    .active{
+        color:$color-main;
+        border-color:$color-main;
+    }
+}
+.show{
+    display: block;
+    animation: anim-stepper 1s ease 0.2s 1 normal both running;
+}
+.none{
+    display: none;
+}
+.form{
+    background: url(./images/form.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    padding: 100px 20px 90px;
+    .px1{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .h3{
+        font-size: 28px;
+        font-weight: 400px;
+        line-height: 28px;
+        margin: 0 0 14px;
+        color: white;
+    }
+    input , textarea{
+        width: 100%;
+        background: rgba(255,255,255,0.65);
+        border: 1px solid #222222;
+        color: #000;
+        height: 45px;
+        margin-bottom: 5px;
+        outline: none;
+        padding: 0 20px;
+    }
+    label{
+        width: 100%;
+        background: rgba(255,255,255,0.65);
+        border: 1px solid #222222;
+        color: #54565B;
+        font-size: 13px;
+        height: 45px;
+        margin-bottom: 5px;
+        outline: none;
+        padding: 11px 20px;
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    svg{
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        fill: currentColor;
+        margin-top: -0.25em;
+        margin-right: 0.25em;
+    }
+    .ta1{
+        height: 90px;
+        font-family: $font-family-3;
+    }
+    .ta2{
+        height: 140px;
+        font-family: $font-family-3;
+    }
+    .btnPri{
+        outline: none;
+        background: transparent;
+        cursor: pointer;
+        border: none;
+        height: 45px;
+        font-family: $font-family-2;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+        transition: .3s;
+        background:$color-main;
+        color: white;
+        width: 100%;
+
+        &:hover{
+            color: $color-main;
+            background-color: white;
+            border-color: $color-main;
+            border: 2px solid;
+        }
+    }
 }
 
 
