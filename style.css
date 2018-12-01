@@ -1146,266 +1146,316 @@ router-outlet {
   border: 2px solid #89331B;
 }
 
-.coffee {
+.background {
+  background-color: #cccccc;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.background.coffee {
   background-image: url(./images/coffeeBg.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-.sweet {
+.background.sweet {
   background-image: url(./images/sweetBg.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-.vanilla {
+.background.vanilla {
   background-image: url(./images/vanillaBg.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-.tea {
+.background.tea {
   background-image: url(./images/teaBg.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-.savory {
+.background.savory {
   background-image: url(./images/savoryBg.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-.application {
+.background.application {
   background-image: url(./images/applicationBg.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-.service {
+.background.service {
   background-image: url(./images/serviceBg.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-.service .mainTitle {
-  width: 60%;
-}
-
-.service .mainTitle .h1 {
-  line-height: 1.2;
-}
-
-.service .mainTitle .h3 {
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-.service .cover-desc {
-  padding: 100px 100px 80px;
-  display: block;
-}
-
-.service .theArea .images {
-  background-image: url(./images/slide2.jpg);
-}
-
-.nutrition {
+.background.nutrition {
   background-image: url(./images/nutritionBg.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-.nutrition .mainTitle .h1 {
-  font-size: 68px;
-}
-
-.nutrition .mainTitle .h3 {
-  font-size: 24px;
-}
-
-.nutrition .theArea .images {
-  background-image: url(./images/nutrition1.jpg);
-  border-radius: 10px;
-}
-
-.quality {
+.background.quality {
   background-image: url(./images/qualityBg.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-.quality .theArea .images {
-  background-image: url(./images/quality1.jpg);
-}
-
-.article {
+.background.article {
   background-image: url(./images/articleBg.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-.article .applicationCard .cover-desc {
-  padding: 60px 10px;
-}
-
-.contact {
-  background-image: url(./images/contactBg.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.about {
+.background.about {
   background-image: url(./images/aboutBg.jpg);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.about .mainTitle {
-  width: 65%;
 }
 
 .mainTitle {
   padding: 200px 0 150px;
-  width: 70%;
 }
 
-.mainTitle .h1 {
-  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-  font-size: 68px;
+.mainTitle .wordCover {
+  max-width: 800px;
+}
+
+.mainTitle .wordCover .h1 {
   color: white;
-  margin-bottom: 10px;
 }
 
-.mainTitle .h3 {
+.mainTitle .wordCover .h3 {
+  line-height: 1.5;
+  color: white;
   font-size: 28px;
   font-family: "Merriweather", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-  color: white;
-  line-height: 1.5;
-  font-weight: 400;
 }
 
-.mainTitle p {
-  display: block;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
+.mainTitle .wordCover .h3.service {
+  font-size: 20px;
+}
+
+.mainTitle .wordCover .h3.nutrition {
+  font-size: 24px;
 }
 
 .card {
   background: rgba(255, 255, 255, 0.97);
-  border-radius: 10px;
   padding: 60px 10px;
-  width: 100%;
+  border-radius: 10px;
 }
 
-.card .card-desc {
+.card .form {
+  padding: 100px 20px 90px;
+}
+
+.card .form .h3 {
+  color: white;
+}
+
+.card .form input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid #222222;
+  color: #000;
+  height: 45px;
+  margin-bottom: 5px;
+  outline: none;
+  padding: 0 20px;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+}
+
+.card .form label {
+  border: 1px solid #222222;
+  background: rgba(255, 255, 255, 0.65);
+  color: #54565B;
+  font-size: 13px;
+  height: 45px;
+  margin-bottom: 5px;
+  outline: none;
+  padding: 11px 20px;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: hidden;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+}
+
+.card .form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid #222222;
+  color: #000;
+  height: 95px;
+  margin-bottom: 5px;
+  outline: none;
+  padding: 0 20px;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  display: block;
+  padding-top: 15px;
+}
+
+.card .form .message {
+  height: 145px;
+}
+
+.card .form .sendButton {
+  background: #89331B;
+  color: white;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  height: 45px;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.card .form .sendButton:hover {
+  color: #89331B;
+  background-color: white;
+  border: solid #89331B;
+}
+
+.card address {
+  font-style: normal;
+}
+
+.card address a {
+  color: #54565B;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  display: block;
+}
+
+.card address a:hover {
+  color: #89331B;
+}
+
+.card .h1 {
+  text-align: center;
+  color: #787b82;
+  line-height: 75px;
+}
+
+.card.application {
+  padding: 0px;
+  overflow: hidden;
+}
+
+.card .card-description {
+  max-width: 880px;
   padding: 0 20px;
   margin: 0 auto;
-  max-width: 880px;
   margin-bottom: 30px;
 }
 
-.card .card-desc p {
+.card .card-description p {
   color: #787b82;
   font-family: "Merriweather", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-  letter-spacing: normal;
-  font-weight: 400;
-  margin: 0 0 24px;
   line-height: 1.8;
 }
 
-.card .card-desc b {
+.card .card-description p b {
   color: #89331B;
 }
 
-.card .card-desc .h3 {
-  color: #89331B;
-  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-}
-
-.card .card-desc .h2 {
+.card .card-description .h2 {
   font-size: 18px;
   font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  display: block;
+  line-height: 50px;
   color: black;
 }
 
-.inlineImage {
-  margin-top: 60px;
-  width: 100%;
+.card .word {
+  padding: 100px 100px 90px;
 }
 
-.inlineImage .p1 {
+.card .word .h3 {
+  font-size: 28px;
+  color: #89331B;
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  margin: 0 0 14px;
+}
+
+.card .word .h4 {
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  font-size: 16px;
+  color: #54565B;
+  line-height: 24px;
+}
+
+.card .word p {
+  font-family: "Merriweather", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  color: #54565B;
+  line-height: 1.5;
+  letter-spacing: normal;
+  margin: 0 0 24px;
+}
+
+.card .word p.contact {
+  margin-bottom: 10px;
+}
+
+.card .word p span {
+  color: #89331B;
+}
+
+.card .word ul {
+  padding-left: 15px;
+}
+
+.card .word ul.contact li {
+  margin-bottom: 5px;
+  color: #787b82;
+}
+
+.card .word ul li {
+  margin-bottom: 10px;
+}
+
+.card .word .companyName {
+  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.card .word .companyName span {
+  font-size: 13px;
+}
+
+.card .word .address {
+  line-height: 1.2;
+}
+
+.card .word .tel {
+  margin-top: 8px;
+}
+
+.card .inlineImage .p1 {
   padding: 8px;
 }
 
-.inlineImage img {
+.card .inlineImage img {
   width: 100%;
   border-radius: 5px;
 }
 
-.flex-wrap {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.otherImage {
+.card .otherImage {
   margin-top: 100px;
-  text-align: center;
   padding: 60px 0;
 }
 
-.otherImage .h1 {
+.card .otherImage .h1 {
   color: #54565B;
   font-size: 48px;
   margin-bottom: 20px;
-  font-family: #787b82;
+  text-align: center;
 }
 
-.otherImage .other4Image .image-scale {
+.card .otherImage img {
+  width: 100%;
+}
+
+.card .otherImage .image-scale {
   position: relative;
+  display: block;
   width: 100%;
   padding: 8px;
   overflow: hidden;
 }
 
-.otherImage .other4Image .image-scale img {
-  width: 100%;
-  border-radius: 5px;
-  display: block;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-}
-
-.otherImage .other4Image .image-scale img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
-.otherImage .other4Image .image-scale p {
+.card .otherImage .image-scale .p1 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1414,170 +1464,47 @@ router-outlet {
   padding: 5px 10px;
   text-align: center;
   color: white;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
   background: rgba(0, 0, 0, 0.6);
-  text-transform: capitalize;
 }
 
-.theArea {
+.card .ImageCover {
   position: relative;
   display: block;
 }
 
-.theArea .images {
-  position: absolute;
-  left: 0;
-  top: 0;
+.card .ImageCover .image {
   width: 100%;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 10px;
+}
+
+.card .ImageCover .image.application {
   background-image: url(./images/slide1.jpg);
-  border-radius: 10px;
 }
 
-.applicationCard {
-  background: rgba(255, 255, 255, 0.97);
-  border-radius: 10px;
-  width: 100%;
-  padding: 0;
+.card .ImageCover .image.service {
+  background-image: url(./images/slide2.jpg);
+  border-radius: 0;
 }
 
-.applicationCard .card-desc {
-  padding: 0 20px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+.card .ImageCover .image.nutrition {
+  background-image: url(./images/nutrition1.jpg);
 }
 
-.applicationCard .card-desc p {
-  color: #54565B;
-  font-family: "Merriweather", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-  letter-spacing: normal;
-  font-weight: 400;
-  margin: 0 0 24px;
-  line-height: 1.5;
+.card .ImageCover .image.quality {
+  background-image: url(./images/quality1.jpg);
 }
 
-.applicationCard .card-desc b {
-  color: #89331B;
+.card .ImageCover .image.contact {
+  background-image: url(./images/contact1.jpg);
 }
 
-.applicationCard .card-desc .h3 {
-  color: #89331B;
-  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-}
-
-.applicationCard .card-desc .h2 {
-  font-size: 18px;
-  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-  color: black;
-}
-
-.applicationCard .card-desc .h4 {
-  font-size: 16px;
-  font-weight: 400;
-  color: #54565B;
-  line-height: 24px;
-  letter-spacing: 1;
-  margin: 0 0 14px;
-  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-}
-
-.applicationCard .cover-desc {
-  padding: 100px 100px 90px;
-  display: block;
-}
-
-.applicationCard .cover-desc address {
-  font-style: normal;
-}
-
-.applicationCard .cover-desc ul li {
-  margin-bottom: 10px;
-}
-
-.applicationCard .cover-desc .h1 {
-  color: #787b82;
-  text-align: center;
-  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-  line-height: 1.8;
-}
-
-.applicationCard .cover-desc .companyName {
-  margin-bottom: 5px;
-  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-}
-
-.applicationCard .cover-desc .companyName span {
-  font-size: 13px;
-}
-
-.applicationCard .cover-desc a {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-  color: #54565B;
-  display: block;
-}
-
-.applicationCard .cover-desc a:hover {
-  color: #89331B;
-}
-
-.applicationCard .cover-desc .address {
-  line-height: 1.2;
-}
-
-.applicationCard .cover-desc .mt1 {
-  margin-top: 8px;
-}
-
-.applicationCard .word p {
-  font-weight: 400;
-  color: #54565B;
-  line-height: 1.5;
-  letter-spacing: normal;
-  margin: 0 0 24px;
-  margin-bottom: 10px;
-}
-
-.applicationCard .word p .tel {
-  font-family: #787b82;
-  color: #89331B;
-  display: inline;
-}
-
-.applicationCard .word ul {
-  padding-left: 15px;
-  color: #787b82;
-}
-
-.applicationCard .word ul li {
-  margin-bottom: 5px;
-}
-
-@media (max-width: 1024px) {
-  .mainTitle {
-    width: 100%;
-  }
-  .mainTitle .h1 {
-    font-size: 38px;
-    margin-bottom: 10px;
-  }
-  .mainTitle .h3 {
-    font-size: 18px;
-  }
-  .cover-desc {
-    padding: 100px 20px 90px !important;
-    display: block;
-  }
-  .cover-desc p {
-    font-size: 14px;
-  }
-  .cover-desc .h3 {
-    font-size: 28px;
-  }
-}
-
-.stepper {
+.card .circleCover {
   padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1590,7 +1517,7 @@ router-outlet {
   position: relative;
 }
 
-.stepper .step {
+.card .circleCover .circle {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1609,114 +1536,24 @@ router-outlet {
   border: 2px solid #cfd0d3;
   border-radius: 50%;
   background: white;
-  cursor: pointer;
-  -webkit-transition: .3s ease-in;
-  transition: .3s ease-in;
 }
 
-.stepper .active {
-  color: #89331B;
+.card .circleCover .active {
   border-color: #89331B;
 }
 
-.show {
-  display: block;
-  -webkit-animation: anim-stepper 1s ease 0.2s 1 normal both running;
-          animation: anim-stepper 1s ease 0.2s 1 normal both running;
+@media (max-width: 1024px) {
+  .word {
+    padding: 100px 20px 90px !important;
+  }
 }
 
-.none {
-  display: none;
-}
-
-.form {
-  background: url(./images/form.jpg) no-repeat center;
-  background-size: cover;
-  position: relative;
-  padding: 100px 20px 90px;
-}
-
-.form .px1 {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.form .h3 {
-  font-size: 28px;
-  font-weight: 400px;
-  line-height: 28px;
-  margin: 0 0 14px;
-  color: white;
-}
-
-.form input, .form textarea {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.65);
-  border: 1px solid #222222;
-  color: #000;
-  height: 45px;
-  margin-bottom: 5px;
-  outline: none;
-  padding: 0 20px;
-}
-
-.form label {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.65);
-  border: 1px solid #222222;
-  color: #54565B;
-  font-size: 13px;
-  height: 45px;
-  margin-bottom: 5px;
-  outline: none;
-  padding: 11px 20px;
-  display: block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.form svg {
-  width: 18px;
-  height: 18px;
-  vertical-align: middle;
-  fill: currentColor;
-  margin-top: -0.25em;
-  margin-right: 0.25em;
-}
-
-.form .ta1 {
-  height: 90px;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-}
-
-.form .ta2 {
-  height: 140px;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-}
-
-.form .btnPri {
-  outline: none;
-  background: transparent;
-  cursor: pointer;
-  border: none;
-  height: 45px;
-  font-family: "Oswald", -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-align: center;
-  -webkit-transition: .3s;
-  transition: .3s;
-  background: #89331B;
-  color: white;
-  width: 100%;
-}
-
-.form .btnPri:hover {
-  color: #89331B;
-  background-color: white;
-  border-color: #89331B;
-  border: 2px solid;
+@media (max-width: 769px) {
+  .ImageCover .image {
+    height: 500px !important;
+  }
+  .ImageCover .image.service {
+    height: 200px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

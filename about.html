@@ -8,74 +8,32 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Oswald:700|Poppins" rel="stylesheet">
 </head>
-<body class="about">
-
+<body class="background about">
     <div class="container">
-        <div class="row">
-            <div class="mainTitle ">
+        <div class="mainTitle">
+            <div class="wordCover">
                 <p class="h1">About Baccus</p>
                 <p class="h3">With experience across food, beverage and nutritional products industries, we satisfy the taste buds of millions. Our customers enjoy every bite.</p>
-            </div>
+            </div>    
         </div>
     </div>
-            
-    
     <div class="container">
         <div class="card">
-            <div class="stepper">
-                <div class="step active" onclick="openCity(event, 'First')">Company Profile</div>
-                <div class="step" onclick="openCity(event, 'Second')">Our Quality</div>
-                <div class="step">Our Promise</div>
-                <div class="step">Vision & Mission</div>
-                <div class="step">Passionate</div>
-                <div class="step">Freedom</div>
-                <div class="step">Flexibility</div>
-
+            <div class="circleCover">
+                <div class="circle active">Company Profile</div>
+                <div class="circle">Our Quality</div>
+                <div class="circle">Our Promise</div>
+                <div class="circle">Vision & Mission</div>
+                <div class="circle">Passionate</div>
+                <div class="circle">Freedom</div>
+                <div class="circle">Flexibility</div>
             </div>
-
-            <div id="First" class="card-desc cover-desc lg-col-12 md-col-12 sm-col-12 col-12 show">
-                    <p class="h2">COMPANY PROFILE</p>
-                    <p>
-                        Baccus is one of the leading global flavors, extracts and essences manufacturers and suppliers in Malaysia. Our products are synonymous with taste and a zest for life. With extensive experience across food, beverage and nutritional products industries, our employees do their utmost every day to design and propose the top-quality products and satisfy the taste buds of millions of consumers. Our teams, through innovation, help you stay one step ahead of the competition. To accomplish this goal, we cooperate closely with our suppliers and distribution partners in the retail and wholesale trade, the food service sector and the food processing industry.
-                    </p>
-                    <p>
-                        We combine art and science to create a remarkable array of tastes. Investing strenuously in our R&D and technical capabilities, our commitment to analytical and sensory innovation ensures we are always on hand to deliver the latest market insights and flavor breakthroughs.
-                    </p>
-            </div>
-
-            <div id="Second" class="card-desc cover-desc lg-col-12 md-col-12 sm-col-12 col-12 show none">
-                    <p class="h2">OUR QUALITY</p>
-                    <p>
-                        The quality of our products starts with careful selection of the raw materials. We only work with certified suppliers who guarantee compliance with our requirements. Trial is done in our own master-workshops by people who understand their craft and follow tried-and-tested recipes. This means our customers enjoy every tasteful and savory bite.                    </p>
-                    <p>
-                        Computer-controlled logistics and transport systems help us to cope with short order and delivery cycles and to execute orders in the fastest way. This is how we ensure goods reach the customers in tip-top quality so that our customers taste the premium quality products we deliver.                    
-                    </p>
-            </div>
-
-                
-            
+            <div class="card-description">
+                <p class="h2">COMPANY PROFILE</p>
+                <p>Baccus is one of the leading global flavors, extracts and essences manufacturers and suppliers in Malaysia. Our products are synonymous with taste and a zest for life. With extensive experience across food, beverage and nutritional products industries, our employees do their utmost every day to design and propose the top-quality products and satisfy the taste buds of millions of consumers. Our teams, through innovation, help you stay one step ahead of the competition. To accomplish this goal, we cooperate closely with our suppliers and distribution partners in the retail and wholesale trade, the food service sector and the food processing industry.</p>
+                <p>We combine art and science to create a remarkable array of tastes. Investing strenuously in our R&D and technical capabilities, our commitment to analytical and sensory innovation ensures we are always on hand to deliver the latest market insights and flavor breakthroughs.</p>
             </div>
         </div>
     </div>
-
-    
-            
-          
-          <script>
-          function openCity(evt, cityName) {
-              var i, tabcontent, tablinks;
-              tabcontent = document.getElementsByClassName("show");
-              for (i = 0; i < tabcontent.length; i++) {
-                  tabcontent[i].style.display = "none";
-              }
-              tablinks = document.getElementsByClassName("step");
-              for (i = 0; i < tablinks.length; i++) {
-                  tablinks[i].className = tablinks[i].className.replace(" active", "");
-              }
-              document.getElementById(cityName).style.display = "block";
-              evt.currentTarget.className += " active";
-          }
-          </script> }
-</script>
 </body>
 </html>
